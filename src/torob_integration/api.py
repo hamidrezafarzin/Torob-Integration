@@ -64,11 +64,11 @@ class Torob:
     def __get_search_data_from_url(self, data: dict) -> dict:
         for item in data["results"]:
             # Extract 'prk' and 'search_id' from 'more_info_url'
-            prk_start = item["more_info_url"].find("prk=")  # + 4
+            prk_start = item["more_info_url"].find("prk=") + 4
             prk_end = item["more_info_url"].find("&", prk_start)
             prk = item["more_info_url"][prk_start:prk_end]
 
-            search_id_start = item["more_info_url"].find("search_id=")  # + 10
+            search_id_start = item["more_info_url"].find("search_id=") + 10
             search_id_end = item["more_info_url"].find("&", search_id_start)
             search_id = item["more_info_url"][search_id_start:search_id_end]
 
