@@ -5,7 +5,7 @@ with open("README.md", "r", encoding = "utf-8") as fh:
 
 setuptools.setup(
     name = "torob-integration",
-    version = "0.0.1",
+    version = "0.0.2",
     author = "Hamidreza Farzin",
     author_email = "hamidfarzin1382@gmail.com",
     description = "A Python module facilitating effortless interaction with the Torob API for seamless access to product data.",
